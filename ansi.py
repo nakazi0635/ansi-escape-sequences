@@ -13,8 +13,8 @@ def imshow(img):
 
 
 # 画像を読み込む。
-img = cv2.imread("development/ANSI_escape_sequences/test.jpeg")
-filepath = "development/ANSI_escape_sequences/0301.PNG"
+img = cv2.imread("test.jpeg")
+filepath = "0301.PNG"
 print("カレントパス", os.getcwd())
 print("filepath が指す絶対パス", os.path.abspath(filepath))
 print("ファイルが存在するかどうか", os.path.isfile(filepath))
