@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-# import os
+import os
 from IPython.display import Image, display
 from matplotlib import pyplot as plt
 
@@ -14,10 +14,10 @@ def imshow(img):
 
 # 画像を読み込む。
 img = cv2.imread("development/ANSI_escape_sequences/test.jpeg")
-# filepath = "development/ANSI_escape_sequences/IMG_0301.PNG"
-# print("カレントパス", os.getcwd())
-# print("filepath が指す絶対パス", os.path.abspath(filepath))
-# print("ファイルが存在するかどうか", os.path.isfile(filepath))
+filepath = "development/ANSI_escape_sequences/0301.PNG"
+print("カレントパス", os.getcwd())
+print("filepath が指す絶対パス", os.path.abspath(filepath))
+print("ファイルが存在するかどうか", os.path.isfile(filepath))
 assert img is not None, "読み込みに失敗しました"
 # print(img.shape)
 # print(type(img))
